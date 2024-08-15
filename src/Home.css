@@ -1,0 +1,102 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.home-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.home-header p {
+    font-size: 16px;
+    width: 70%;
+    color: #fff;
+    text-align: justify !important;
+}
+
+.home-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.home-card:hover {
+    transform: scale(1.1,1.1);
+}
+
+.home-cards:hover > .home-card:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9,0.9);
+}
+
+.home-card .top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    height: 70%;
+    width: 100%;
+}
+
+.home-card .top h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #030303;
+}
+
+.home-card .bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #000222;
+    height: 30%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.home-card li {
+    list-style: none;
+    margin: 30px;
+}
+
+.home-card .bottom p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: justify;
+    padding: 0 10px;
+}

@@ -1,18 +1,22 @@
 import './App.css'
-import { useResponsiveTSX } from './useResponsiveTSX'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Home'
 
 function App() {
 
-  const breakpoint = useResponsiveTSX([600, 900, 1200]);
+  // const breakpoint = useResponsiveTSX([600, 900, 1200]);
 
   return (
-    <>
-      {breakpoint === 0 && <div>Mobile View</div>}
-      {breakpoint === 1 && <div>Tablet View</div>}
-      {breakpoint === 2 && <div>Desktop View</div>}
-      {breakpoint === 3 && <div>Large Desktop View</div>}
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route path="React-Component-Library" element={<Home />} />
+          {/* <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
