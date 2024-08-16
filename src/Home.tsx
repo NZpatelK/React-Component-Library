@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import cardTiltEffectGif from './assets/3D-card-tilt.gif'
 import './Home.css'
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
             <div className="home-cards">
                 <Link to="3d-card-tilt-effect" className="home-card">
                     <div className="top">
-                        <h1>preview</h1>
+                        <img src={cardTiltEffectGif} alt="" className='gif' />
                     </div>
                     <div className="bottom">
-                        <p>This is a preview</p>
+                        <h3>3D Card Tilt Effect</h3>
                     </div>
                 </Link>
                 <Link to="/React-Component-Library" className="home-card">
