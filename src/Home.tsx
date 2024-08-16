@@ -25,7 +25,7 @@ export default function Home() {
                         <h1>preview2</h1>
                     </div>
                     <div className="bottom">
-                        <p>This is a preview2</p>
+                        <h3>This is a preview2</h3>
                     </div>
                 </Link>
             </div>
