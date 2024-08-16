@@ -1,0 +1,71 @@
+.flipCardHoverEffectsPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at center center, rgb(167, 204, 221) 0%, rgb(167, 204, 221) 7%, rgb(141, 193, 218) 7%, rgb(141, 193, 218) 14%, rgb(115, 182, 215) 14%, rgb(115, 182, 215) 21%, rgb(90, 172, 213) 21%, rgb(90, 172, 213) 28%, rgb(64, 161, 210) 28%, rgb(64, 161, 210) 35%, rgb(38, 150, 207) 35%, rgb(38, 150, 207) 42%, transparent 42%, transparent 100%), radial-gradient(circle at center left, rgb(167, 204, 221) 0%, rgb(167, 204, 221) 3%, rgb(141, 193, 218) 3%, rgb(141, 193, 218) 7%, rgb(115, 182, 215) 7%, rgb(115, 182, 215) 11%, rgb(90, 172, 213) 11%, rgb(90, 172, 213) 15%, rgb(64, 161, 210) 15%, rgb(64, 161, 210) 19%, rgb(38, 150, 207) 19%, rgb(38, 150, 207) 23%, transparent 23%, transparent 100%), radial-gradient(circle at center right, rgb(167, 204, 221) 0%, rgb(167, 204, 221) 3%, rgb(141, 193, 218) 3%, rgb(141, 193, 218) 7%, rgb(115, 182, 215) 7%, rgb(115, 182, 215) 11%, rgb(90, 172, 213) 11%, rgb(90, 172, 213) 15%, rgb(64, 161, 210) 15%, rgb(64, 161, 210) 19%, rgb(38, 150, 207) 19%, rgb(38, 150, 207) 23%, rgb(12, 139, 204) 23%, rgb(12, 139, 204) 100%);
+  }
+ 
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px 70px;
+    padding: 100px 10px;
+  }
+ 
+  .card-3d {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    transform-style: preserve-3d;
+  }
+ 
+  .card-3d .face {
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: perspective(300px) rotateY(0deg);
+    transition: 2s ease-in-out;
+  }
+ 
+  .card-3d .face.front {
+    background-image: repeating-linear-gradient(135deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 10px, transparent 10px, transparent 11px), repeating-linear-gradient(22.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 10px, transparent 10px, transparent 11px), linear-gradient(90deg, hsl(194, 74%, 56%), hsl(266, 74%, 56%), hsl(338, 74%, 56%), hsl(50, 74%, 56%), hsl(122, 74%, 56%));
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  }
+ 
+ 
+  .card-3d:hover .face.front {
+    transform: perspective(300px) rotateY(180deg);
+  }
+ 
+  .card-3d .face.back {
+    background-image: repeating-linear-gradient(45deg, rgba(118, 118, 118, 0.05) 0px, rgba(118, 118, 118, 0.05) 19px, rgba(59, 59, 59, 0.05) 19px, rgba(59, 59, 59, 0.05) 67px, rgba(195, 195, 195, 0.05) 67px, rgba(195, 195, 195, 0.05) 87px, rgba(121, 121, 121, 0.05) 87px, rgba(121, 121, 121, 0.05) 133px, rgba(250, 250, 250, 0.05) 133px, rgba(250, 250, 250, 0.05) 172px, rgba(106, 106, 106, 0.05) 172px, rgba(106, 106, 106, 0.05) 197px, rgba(151, 151, 151, 0.05) 197px, rgba(151, 151, 151, 0.05) 226px, rgba(219, 219, 219, 0.05) 226px, rgba(219, 219, 219, 0.05) 260px), repeating-linear-gradient(45deg, rgba(70, 70, 70, 0.05) 0px, rgba(70, 70, 70, 0.05) 40px, rgba(220, 220, 220, 0.05) 40px, rgba(220, 220, 220, 0.05) 79px, rgba(95, 95, 95, 0.05) 79px, rgba(95, 95, 95, 0.05) 103px, rgba(15, 15, 15, 0.05) 103px, rgba(15, 15, 15, 0.05) 148px, rgba(51, 51, 51, 0.05) 148px, rgba(51, 51, 51, 0.05) 186px, rgba(225, 225, 225, 0.05) 186px, rgba(225, 225, 225, 0.05) 202px, rgba(60, 60, 60, 0.05) 202px, rgba(60, 60, 60, 0.05) 239px, rgba(67, 67, 67, 0.05) 239px, rgba(67, 67, 67, 0.05) 259px), repeating-linear-gradient(45deg, rgba(146, 146, 146, 0.05) 0px, rgba(146, 146, 146, 0.05) 40px, rgba(166, 166, 166, 0.05) 40px, rgba(166, 166, 166, 0.05) 54px, rgba(156, 156, 156, 0.05) 54px, rgba(156, 156, 156, 0.05) 71px, rgba(134, 134, 134, 0.05) 71px, rgba(134, 134, 134, 0.05) 95px, rgba(77, 77, 77, 0.05) 95px, rgba(77, 77, 77, 0.05) 111px, rgba(26, 26, 26, 0.05) 111px, rgba(26, 26, 26, 0.05) 153px, rgba(46, 46, 46, 0.05) 153px, rgba(46, 46, 46, 0.05) 202px, rgba(197, 197, 197, 0.05) 202px, rgba(197, 197, 197, 0.05) 216px), linear-gradient(90deg, rgb(30, 178, 248), rgb(46, 36, 197));
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    transform: perspective(300px) rotateY(180deg);
+ 
+  }
+ 
+  .card-3d:hover .face.face.back {
+    transform: perspective(300px) rotateY(360deg);
+  }
+ 
+  .card-3d .face h2 {
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    transform: perspective(300px) translateZ(50px);
+ 
+  }
