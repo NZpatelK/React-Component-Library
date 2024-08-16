@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home'
+import CardTiltEffect from './components/cards/3d-card-tilt-effect/cardTiltEffect';
 
 function App() {
 
@@ -9,12 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="React-Component-Library" element={<Home />} />
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="React-Component-Library" element={<Home />} />
+        <Route path="React-Component-Library/3d-card-tilt-effect" element={<CardTiltEffect />} />
+
       </Routes>
     </BrowserRouter>
   )
