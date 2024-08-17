@@ -1,6 +1,7 @@
 //Components
 import CardTiltEffect from '../components/cards/3d-card-tilt-effect/cardTiltEffect';
 import FlipCard3dEffects from '../components/cards/3d-flip-card-hover-effects/FlipCardHover3dEffects';
+import CardFlippingAnimation from '../components/cards/card-flipping-animation/CardFlippingAnimation';
 
 //Images
 import cardTiltEffectGif from '../assets/3D-card-tilt.gif';
@@ -20,5 +21,12 @@ export const componentsData = [
         "link": "3d-flip-card-hover-effects",
         "type": "card",
         "component": FlipCard3dEffects
+    },
+    {
+        "name": "Card Flipping Animation",
+        "image": "",
+        "link": "card-flipping-animation",
+        "type": "card",
+        "component": CardFlippingAnimation
     }
 ]
