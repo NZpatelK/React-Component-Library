@@ -1,9 +1,8 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home'
-import CardTiltEffect from './components/cards/3d-card-tilt-effect/cardTiltEffect';
 import { useResponsiveTSX } from './useResponsiveTSX';
-import FlipCard3dEffects from './components/cards/3d-flip-card-hover-effects/FlipCardHover3dEffects';
+import { componentsData } from './data/componentsData';
 
 function App() {
 
@@ -16,8 +15,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="React-Component-Library" element={<Home />} />
-            <Route path="React-Component-Library/3d-card-tilt-effect" element={<CardTiltEffect />} />
-            <Route path="React-Component-Library/3d-flip-card-hover-effects" element={<FlipCard3dEffects/>} />
+
+            {componentsData.map((component) => {
+              return (
+                <Route key={component.link} path={`React-Component-Library/${component.link}`} element={<component.component />} />
+              )
+            })}
+
           </Routes>
         </BrowserRouter>}
     </>

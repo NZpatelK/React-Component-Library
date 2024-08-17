@@ -14,12 +14,12 @@ export default function Home() {
             <div className="home-cards">
 
                 {componentsData.map((component, index) => (
-                    <Link to={component.componentLink} key={index} className="home-card">
+                    <Link to={component.link} key={index} className="home-card">
                         <div className="top">
-                            <img src={component.componentImage}  alt="" className='gif' />
+                            <img src={component.image}  alt="" className='gif' />
                         </div>
                         <div className="bottom">
-                            <h3>{component.componentName}</h3>
+                            <h3>{component.name}</h3>
                         </div>
                     </Link>
                 ))}
