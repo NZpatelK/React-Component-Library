@@ -1,7 +1,7 @@
 import React from 'react';
 import shoe2 from '../../../assets/shoes/shoe1.png';
 import shoe1 from '../../../assets/shoes/shoe2.png';
-import './cardTiltEffect.css';
+import './CardTiltEffect.css';
 import Tilt from 'react-parallax-tilt';
 
 const CardTiltEffect: React.FC = () => {
