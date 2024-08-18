@@ -14,8 +14,8 @@
   
   .wrapper,
   .card {
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 250px;
     margin: auto;
     position: relative;
   
@@ -39,7 +39,7 @@
   
   .card .front,
   .card .back {
-    width: 300px;
+    width: 250px;
     position: relative;
     top: 0;
     left: 0;
@@ -77,20 +77,20 @@
     transform: rotateY(180deg);
     position: absolute;
     border-radius: 20px;
-    height: 200px;
+    height: 150px;
     color: #fff;
     background-image: linear-gradient(45deg, rgb(252, 209, 5) 0%, rgb(252, 209, 5) 6%, rgb(246, 177, 19) 6%, rgb(246, 177, 19) 19%, rgb(240, 146, 32) 19%, rgb(240, 146, 32) 41%, rgb(235, 114, 46) 41%, rgb(235, 114, 46) 55%, rgb(229, 83, 59) 55%, rgb(229, 83, 59) 94%, rgb(223, 51, 73) 94%, rgb(223, 51, 73) 100%);
   }
   
   .card .back h4 {
-    padding-top: 30px;
+    padding-top: 10px;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   p {
     text-align: justify;
-    padding: 10px 20px;
+    padding: 5px 20px;
     font-size: 0.6em;
     font-weight: 600;
   }

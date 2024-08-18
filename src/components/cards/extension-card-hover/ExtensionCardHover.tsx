@@ -1,9 +1,12 @@
 
-import React, { useEffect, useState } from 'react';
+import React,  {useState } from 'react';
 import './ExtensionCardHover.css';
+import { useResponsiveTSX } from '../../../useResponsiveTSX';
 
 const ExtensionCardHover: React.FC = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1025);
+    // const [isMobile, setIsMobile] = useState(window.innerWidth <= 1025);
+    const isMobile = useResponsiveTSX([600, 900, 1200]) <= 1;
+
     const [selectedId, setSelectedId] = useState(1);
     const data = [{
         "id": 1,
@@ -35,21 +38,6 @@ const ExtensionCardHover: React.FC = () => {
         "title": "event",
         "description": "Praesent auctor justo vitae sem fermentum, et tempor libero interdum. Cras non metus nec neque vehicula dictum. Etiam faucibus enim ut elit pharetra, sed lacinia magna eleifend. Donec scelerisque elit ac leo lobortis tincidunt. Aliquam ac orci sit amet est ullamcorper eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vehicula metus id est ultricies, et venenatis risus cursus. Donec dapibus orci non nunc varius, sed pharetra leo malesuada. Integer a velit ut erat condimentum volutpat nec ut nisi. Nullam vitae nisl at ipsum aliquet sagittis. Pellentesque varius velit a magna scelerisque luctus.",
     },]
-
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 1025);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [])
-
 
     return (
         <>
