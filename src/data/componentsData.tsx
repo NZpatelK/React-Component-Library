@@ -1,4 +1,6 @@
-//Components
+//------------------- Components -------------------//
+
+//Cards
 import CardTiltEffect from '../components/cards/3d-card-tilt-effect/CardTiltEffect';
 import FlipCard3dEffects from '../components/cards/3d-flip-card-hover-effects/FlipCardHover3dEffects';
 import CardFlippingAnimation from '../components/cards/card-flipping-animation/CardFlippingAnimation';
@@ -6,7 +8,17 @@ import CardSlideUp from '../components/cards/card-slide-up/CardSlideUp';
 import ExtensionCardHover from '../components/cards/extension-card-hover/ExtensionCardHover';
 import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-card-hover-effects/GlassmorphismCardHoverEffects';
 
-//Images
+//Images Animation
+import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
+
+//Text Animation
+import { CalligraphyStrokeAnimation } from '../components/texts/calligraphyStrokeAnimation/CalligraphyStrokeAnimation';
+
+
+
+//------------------- Gifs -------------------//
+
+//Gifs
 import cardTiltEffectGif from '../assets/3D-card-tilt.gif';
 import flipCardHoverEffectsGif from '../assets/3dFlipCardgif.gif';
 import cardFlippingAnimationGif from '../assets/flippingCard.gif';
@@ -56,6 +68,20 @@ export const componentsData = [
         "link": "glassmorphism-card-hover-effects",
         "type": "card",
         "component": GlassmorphismCardHoverEffects
+    },
+    {
+        "name": "Images Zoom In",
+        "image": "",
+        "link": "images-zoom-in",
+        "type": "image",
+        "component": ImagesZoomIn
+    },
+    {
+        "name": "Calligraphy Stroke Animation",
+        "image": "",
+        "link": "calligraphy-stroke-animation",
+        "type": "text",
+        "component": CalligraphyStrokeAnimation
     }
 
 ]
