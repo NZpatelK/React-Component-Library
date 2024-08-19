@@ -11,6 +11,9 @@ import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-car
 //Images Animation
 import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
 
+//Text Animation
+import { CalligraphyStrokeAnimation } from '../components/texts/calligraphyStrokeAnimation/CalligraphyStrokeAnimation';
+
 
 
 //------------------- Gifs -------------------//
@@ -72,6 +75,13 @@ export const componentsData = [
         "link": "images-zoom-in",
         "type": "image",
         "component": ImagesZoomIn
+    },
+    {
+        "name": "Calligraphy Stroke Animation",
+        "image": "",
+        "link": "calligraphy-stroke-animation",
+        "type": "text",
+        "component": CalligraphyStrokeAnimation
     }
 
 ]
