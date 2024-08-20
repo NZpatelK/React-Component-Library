@@ -1,6 +1,30 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import {componentsData} from './data/componentsData'
+import { componentsData } from './data/componentsData'
 import './Home.css'
+
+const HoverCard = ({ staticImg, gifImg, title, link, index }: { staticImg: string, gifImg: string, title: string, link: string, index: number }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    return (
+            <Link to={link} key={index} className="home-card"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            >
+                <div className="top">
+                    <img
+                        className="gif"
+                        src={isHovered ? gifImg : staticImg}
+                        alt={title}
+                    />
+                </div>
+                <div className="bottom">
+                    <h3>{title}</h3>
+                </div>
+            </Link>
+        // </div>
+    );
+};
 
 export default function Home() {
     return (
@@ -14,16 +38,15 @@ export default function Home() {
             <div className="home-cards">
 
                 {componentsData.map((component, index) => (
-                    <Link to={component.link} key={index} className="home-card">
-                        <div className="top">
-                            <img src={component.image}  alt="" className='gif' />
-                        </div>
-                        <div className="bottom">
-                            <h3>{component.name}</h3>
-                        </div>
-                    </Link>
+                    <HoverCard
+                        staticImg={component.img}
+                        gifImg={component.gif}
+                        title={component.name}
+                        link={component.link}
+                        index={index}
+                    />
                 ))}
-                
+
             </div>
         </div>
     )

@@ -20,112 +20,139 @@ import ZoomBySwitch from '../components/texts/ZoomBySwitch/ZoomBySwitch';
 import ZoomBySwitch2 from '../components/texts/ZoomBySwitch/ZoomBySwitch2';
 
 
-//------------------- Gifs -------------------//
+//------------------- Homepage Display -------------------//
 
 //Gifs
-import cardTiltEffectGif from '../assets/3D-card-tilt.gif';
-import flipCardHoverEffectsGif from '../assets/3dFlipCardgif.gif';
-import cardFlippingAnimationGif from '../assets/flippingCard.gif';
-import cardSlideUpGif from '../assets/slideUpCard.gif';
-import glassmorphismCard from '../assets/GlassmorphismCardHoverEffectsGif.gif'
-import extensionCardHover from '../assets/extendCard.gif'
-import CalligraphyStroke from '../assets/CalligraphyStrokeGif.gif';
-import imageSlide from '../assets/imageZoom.gif';
-import letterRotatingGif from '../assets/letterRotating.gif';
-import strokeSvgAnimationGif from '../assets/strokeGif.gif';
-import textSvgAnimationGif from '../assets/textSvgGif.gif';
-import zoomBySwitchButton from '../assets/textSlideByButtonGif.gif';
-import zoomBySwitchScroll from '../assets/textSlideByScrollGif.gif';
+import cardTiltEffectGif from '../assets/mainImages/3D-card-tilt.gif';
+import flipCardHoverEffectsGif from '../assets/mainImages/3dFlipCardgif.gif';
+import cardFlippingAnimationGif from '../assets/mainImages/flippingCard.gif';
+import cardSlideUpGif from '../assets/mainImages/slideUpCard.gif';
+import glassmorphismCard from '../assets/mainImages/GlassmorphismCardHoverEffectsGif.gif'
+import extensionCardHover from '../assets/mainImages/extendCard.gif'
+import CalligraphyStroke from '../assets/mainImages/CalligraphyStrokeGif.gif';
+import imageSlide from '../assets/mainImages/imageZoom.gif';
+import letterRotatingGif from '../assets/mainImages/letterRotating.gif';
+import strokeSvgAnimationGif from '../assets/mainImages/strokeGif.gif';
+import textSvgAnimationGif from '../assets/mainImages/textSvgGif.gif';
+import zoomBySwitchButton from '../assets/mainImages/textSlideByButtonGif.gif';
+import zoomBySwitchScroll from '../assets/mainImages/textSlideByScrollGif.gif';
+
+//Images 
+import cardtilteffectImg from '../assets/mainImages/3D-card-tilt.jpeg'
+import flipCardHoverEffectsImg from '../assets/mainImages/3dFlipCardgif.jpeg'
+import cardFlippingAnimationImg from '../assets/mainImages/flippingCard.jpeg'
+import cardSlideUpImg from '../assets/mainImages/slideUpCard.jpeg'
+import extensionCardHoverImg from '../assets/mainImages/extendCard.jpeg'
+import CalligraphyStrokeImg from '../assets/mainImages/CalligraphyStrokeGif.jpeg'
+import imageSlideImg from '../assets/mainImages/imageZoom.jpeg'
+import letterRotatingImg from '../assets/mainImages/letterRotating.jpeg'
+import strokeSvgAnimationImg from '../assets/mainImages/strokeGif.jpeg'
+import textSvgAnimationImg from '../assets/mainImages/textSvgGif.jpeg'
+import zoomBySwitchButtonImg from '../assets/mainImages/textSlideByButtonGif.jpeg'
+import zoomBySwitchScrollImg from '../assets/mainImages/textSlideByScrollGif.jpeg'
 
 
 export const componentsData = [
     {
         "name": "3D Card Tilt Effect",
-        "image": cardTiltEffectGif,
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
         "link": "3d-card-tilt-effect",
         "type": "card",
         "component": CardTiltEffect
     },
     {
         "name": "3D Flip Card Hover Effects",
-        "image": flipCardHoverEffectsGif,
+        "gif": flipCardHoverEffectsGif,
+        "img": flipCardHoverEffectsImg,
         "link": "3d-flip-card-hover-effects",
         "type": "card",
         "component": FlipCard3dEffects
     },
     {
         "name": "Card Flipping Animation",
-        "image": cardFlippingAnimationGif,
+        "gif": cardFlippingAnimationGif,
+        "img": cardFlippingAnimationImg,
         "link": "card-flipping-animation",
         "type": "card",
         "component": CardFlippingAnimation
     },
     {
         "name": "Card Slide Up",
-        "image": cardSlideUpGif,
+        "gif": cardSlideUpGif,
+        "img": cardSlideUpImg,
         "link": "card-slide-up",
         "type": "card",
         "component": CardSlideUp
     },
     {
         "name": "Extension Card Hover",
-        "image": extensionCardHover,
+        "gif": extensionCardHover,
+        "img": extensionCardHoverImg,
         "link": "extension-card-hover",
         "type": "card",
         "component": ExtensionCardHover
     },
     {
         "name": "Glassmorphism Card Hover Effects",
-        "image": glassmorphismCard,
+        "gif": glassmorphismCard,
+        "img": glassmorphismCard,
         "link": "glassmorphism-card-hover-effects",
         "type": "card",
         "component": GlassmorphismCardHoverEffects
     },
     {
         "name": "Images Zoom In",
-        "image": imageSlide,
+        "gif": imageSlide,
+        "img": imageSlideImg,
         "link": "images-zoom-in",
         "type": "image",
         "component": ImagesZoomIn
     },
     {
         "name": "Calligraphy Stroke Animation",
-        "image": CalligraphyStroke,
+        "gif": CalligraphyStroke,
+        "img": CalligraphyStrokeImg,
         "link": "calligraphy-stroke-animation",
         "type": "text",
         "component": CalligraphyStrokeAnimation
     },
     {
         "name": "Letter Rotating",
-        "image": letterRotatingGif,
+        "gif": letterRotatingGif,
+        "img": letterRotatingImg,
         "link": "letter-rotating",
         "type": "text",
         "component": LetterRotating
     },
     {
         "name": "Stroke Svg Animation",
-        "image": strokeSvgAnimationGif,
+        "gif": strokeSvgAnimationGif,
+        "img": strokeSvgAnimationImg,
         "link": "stroke-svg-animation",
         "type": "text",
         "component": StrokeSvgAnimation
     },
     {
         "name": "Text Svg Animation",
-        "image": textSvgAnimationGif,
+        "gif": textSvgAnimationGif,
+        "img": textSvgAnimationImg,
         "link": "text-svg-animation",
         "type": "text",
         "component": TextSvgAnimation
     },
     {
         "name": "Zoom By Switch",
-        "image": zoomBySwitchButton,
+        "gif": zoomBySwitchButton,
+        "img": zoomBySwitchButtonImg,
         "link": "zoom-by-switch",
         "type": "text",
         "component": ZoomBySwitch
     },
     {
         "name": "Zoom By Scroll",
-        "image": zoomBySwitchScroll,
+        "gif": zoomBySwitchScroll,
+        "img": zoomBySwitchScrollImg,
         "link": "zoom-by-switch-2",
         "type": "text",
         "component": ZoomBySwitch2
