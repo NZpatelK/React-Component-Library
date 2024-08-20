@@ -14,6 +14,10 @@ import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZo
 //Text Animation
 import { CalligraphyStrokeAnimation } from '../components/texts/calligraphyStrokeAnimation/CalligraphyStrokeAnimation';
 import LetterRotating from '../components/texts/letterRotating/LetterRotating';
+import { StrokeSvgAnimation } from '../components/texts/strokeSvgAnimation/StrokeSvgAnimation';
+import { TextSvgAnimation } from '../components/texts/TextSvgAnimation/TextSvgAnimation';
+import ZoomBySwitch from '../components/texts/ZoomBySwitch/ZoomBySwitch';
+import ZoomBySwitch2 from '../components/texts/ZoomBySwitch/ZoomBySwitch2';
 
 
 //------------------- Gifs -------------------//
@@ -25,6 +29,14 @@ import cardFlippingAnimationGif from '../assets/flippingCard.gif';
 import cardSlideUpGif from '../assets/slideUpCard.gif';
 import glassmorphismCard from '../assets/GlassmorphismCardHoverEffectsGif.gif'
 import extensionCardHover from '../assets/extendCard.gif'
+import CalligraphyStroke from '../assets/CalligraphyStrokeGif.gif';
+import imageSlide from '../assets/imageZoom.gif';
+import letterRotatingGif from '../assets/letterRotating.gif';
+import strokeSvgAnimationGif from '../assets/strokeGif.gif';
+import textSvgAnimationGif from '../assets/textSvgGif.gif';
+import zoomBySwitchButton from '../assets/textSlideByButtonGif.gif';
+import zoomBySwitchScroll from '../assets/textSlideByScrollGif.gif';
+
 
 export const componentsData = [
     {
@@ -71,24 +83,52 @@ export const componentsData = [
     },
     {
         "name": "Images Zoom In",
-        "image": "",
+        "image": imageSlide,
         "link": "images-zoom-in",
         "type": "image",
         "component": ImagesZoomIn
     },
     {
         "name": "Calligraphy Stroke Animation",
-        "image": "",
+        "image": CalligraphyStroke,
         "link": "calligraphy-stroke-animation",
         "type": "text",
         "component": CalligraphyStrokeAnimation
     },
     {
         "name": "Letter Rotating",
-        "image": "",
+        "image": letterRotatingGif,
         "link": "letter-rotating",
         "type": "text",
         "component": LetterRotating
+    },
+    {
+        "name": "Stroke Svg Animation",
+        "image": strokeSvgAnimationGif,
+        "link": "stroke-svg-animation",
+        "type": "text",
+        "component": StrokeSvgAnimation
+    },
+    {
+        "name": "Text Svg Animation",
+        "image": textSvgAnimationGif,
+        "link": "text-svg-animation",
+        "type": "text",
+        "component": TextSvgAnimation
+    },
+    {
+        "name": "Zoom By Switch",
+        "image": zoomBySwitchButton,
+        "link": "zoom-by-switch",
+        "type": "text",
+        "component": ZoomBySwitch
+    },
+    {
+        "name": "Zoom By Scroll",
+        "image": zoomBySwitchScroll,
+        "link": "zoom-by-switch-2",
+        "type": "text",
+        "component": ZoomBySwitch2
     }
 
 ]
