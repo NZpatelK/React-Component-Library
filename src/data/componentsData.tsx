@@ -13,7 +13,7 @@ import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZo
 
 //Text Animation
 import { CalligraphyStrokeAnimation } from '../components/texts/calligraphyStrokeAnimation/CalligraphyStrokeAnimation';
-
+import LetterRotating from '../components/texts/letterRotating/LetterRotating';
 
 
 //------------------- Gifs -------------------//
@@ -82,6 +82,13 @@ export const componentsData = [
         "link": "calligraphy-stroke-animation",
         "type": "text",
         "component": CalligraphyStrokeAnimation
+    },
+    {
+        "name": "Letter Rotating",
+        "image": "",
+        "link": "letter-rotating",
+        "type": "text",
+        "component": LetterRotating
     }
 
 ]
