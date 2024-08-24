@@ -1,0 +1,126 @@
+.subcard-popup-container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+    color: #fff;
+    height: 100vh;
+}
+
+.subcard_card_container {
+    display: grid;
+    row-gap: 3.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+}
+
+.card_article {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card_article .card_img {
+    width: 428px;
+    height: 320px;
+    background: #033181;
+    border-radius: 1.5rem;
+}
+
+.card_article .card_content {
+    width: 280px;
+    background: #444;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+
+}
+
+.card_content .card_description {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.card_content .card_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.card_content .card_link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #00b3ff;
+}
+
+.card_content .card_link:hover {
+    text-decoration: underline;
+}
+
+.card_article:hover .card_content {
+    animation: show-content 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card_article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card_article:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+
+.card_article:not(:hover) .card_content {
+    animation: remove-content 1s forwards;
+    /* opacity: 0; */
+}
+
+@keyframes show-content {
+    50% {
+        transform: translateY(-12rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-content {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-12rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+
+}

@@ -22,7 +22,6 @@ const HoverCard = ({ staticImg, gifImg, title, link, index }: { staticImg: strin
                     <h3>{title}</h3>
                 </div>
             </Link>
-        // </div>
     );
 };
 

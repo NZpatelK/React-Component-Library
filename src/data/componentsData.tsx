@@ -7,6 +7,7 @@ import CardFlippingAnimation from '../components/cards/card-flipping-animation/C
 import CardSlideUp from '../components/cards/card-slide-up/CardSlideUp';
 import ExtensionCardHover from '../components/cards/extension-card-hover/ExtensionCardHover';
 import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-card-hover-effects/GlassmorphismCardHoverEffects';
+import SubCardPopUp from '../components/cards/subCard-popup/SubCardPopUp';
 
 //Images Animation
 import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
@@ -156,6 +157,14 @@ export const componentsData = [
         "link": "zoom-by-switch-2",
         "type": "text",
         "component": ZoomBySwitch2
+    },
+    {
+        "name": "Sub Card Pop Up",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "sub-card-popup",
+        "type": "card",
+        "component": SubCardPopUp
     }
 
 ]
