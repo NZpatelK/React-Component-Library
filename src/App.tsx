@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      {breakpoint > 0 &&
+      {breakpoint >= 0 &&
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

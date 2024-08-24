@@ -21,8 +21,8 @@
 }
 
 .tilt-card {
-    width: 220px;
-    height: 340px;
+    width: 320px;
+    height: 480px;
     border-radius: 12px;
     transform-style: preserve-3d;
 }
@@ -41,7 +41,7 @@
 }
 
 .tilt-card .product {
-    height: 73%;
+    height: 74%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -52,16 +52,16 @@
 }
 
 .product .number {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 180px;
+    line-height: 110px;
     font-style: italic;
     opacity: 0.25;
     transition: all 0.3s ease-in-out;
 }
 
 .product .sneakers {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 55px;
+    line-height: 75px;
     font-style: italic;
     opacity: 0.7;
     transform: translateZ(0px);
@@ -69,7 +69,7 @@
 }
 
 .product img {
-    height: 280px;
+    height: 430px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,13 +84,14 @@
     margin-left: auto;
     margin-right: -20px;
     padding: 5px 20px;
+    font-size: 25px;
     border-radius: 99px 0 0 99px;
     transition: all 0.3s ease-in-out;
 
 }
 
 .tilt-card .product-title {
-    height: 15%;
+    height: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,16 +107,16 @@
 }
 
 .tilt-card:hover .product img {
-    transform: translate3d(-50%, -40%, 100px);
+    transform: translate3d(-50%, -40%, 200px);
 }
 
 .tilt-card:hover .product .number {
-    transform: translateZ(40px);
+    transform: translateZ(60px);
     opacity: 1;
 }
 
 .tilt-card:hover .product .sneakers {
-    transform: translateZ(40px);
+    transform: translateZ(60px);
     opacity: 0.85;
 }
 
