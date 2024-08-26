@@ -25,6 +25,7 @@
     height: 480px;
     border-radius: 12px;
     transform-style: preserve-3d;
+    margin-top: 20px;
 }
 
 .glare-wrapper {
