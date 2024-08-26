@@ -14,9 +14,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: 200px;
   }
- 
+
   .card-3d {
     position: relative;
     width: 350px;

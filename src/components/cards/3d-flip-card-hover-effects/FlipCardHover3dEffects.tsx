@@ -1,8 +1,13 @@
+import { useResponsiveTSX } from '../../../useResponsiveTSX';
 import './FlipCard3dEffects.css';
 
 function FlipCard3dEffects() {
+
+    const breakpoint = useResponsiveTSX([600, 900, 1200]);
+
+    
     return (
-        <div className='flipCardHoverEffectsPage'>
+        <div className={ breakpoint <= 1 ? "mobile-view flipCardHoverEffectsPage" : 'flipCardHoverEffectsPage'}>
             <div className="container">
                 <div className="card-3d">
                     <div className="face front">

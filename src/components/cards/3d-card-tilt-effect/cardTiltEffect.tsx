@@ -3,11 +3,17 @@ import shoe2 from '../../../assets/shoes/shoe1.png';
 import shoe1 from '../../../assets/shoes/shoe2.png';
 import './CardTiltEffect.css';
 import Tilt from 'react-parallax-tilt';
+import { useResponsiveTSX } from '../../../useResponsiveTSX';
 
 const CardTiltEffect: React.FC = () => {
+
+    const breakpoint = useResponsiveTSX([600, 900, 1200]);
+
+
+
     return (
         <div className='card-tilt-effect-wrapper' >
-            <div className="display-cards">
+            <div className={`${breakpoint <= 1 ? "mobile-view " : ""} display-cards`} >
                 <Tilt className="tilt-card blue"
                     transitionSpeed={5000}
                     glareEnable={true}

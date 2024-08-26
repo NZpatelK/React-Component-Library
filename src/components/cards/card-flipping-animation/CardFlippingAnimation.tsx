@@ -1,9 +1,13 @@
+import { useResponsiveTSX } from '../../../useResponsiveTSX';
 import './CardFlippingAnimation.css';
 
 function CardFlippingAnimation() {
+
+    const breakpoint = useResponsiveTSX([600, 900, 1200]);
+
     return (
         <div className='CardFlippingAnimationPage'>
-            <div className="Container">
+            <div className={ breakpoint <= 1 ? "mobile-view Container" : "Container"}>
                 <div className="wrapper">
                     <div className="card">
                         <div className="front">

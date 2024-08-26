@@ -1,5 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 import './GlassmorphismCardHoverEffects.css';
+import { useResponsiveTSX } from '../../../useResponsiveTSX';
 
 const Plan = ({ name, features }: { name: string, features: string[] }) => (
     <Tilt>
@@ -24,8 +25,11 @@ const plans = [
 ];
 
 function GlassmorphismCardHoverEffects() {
+
+    const breakpoints = useResponsiveTSX([600, 900, 1200]);
+
     return (
-        <div className="GlassContainer">
+        <div className={breakpoints <= 1 ? "mobile-view GlassContainer" : "GlassContainer"}>
             {plans.map(plan => (
                 <Plan key={plan.name} name={plan.name} features={plan.features} />
             ))}
