@@ -20,6 +20,9 @@ import { TextSvgAnimation } from '../components/texts/TextSvgAnimation/TextSvgAn
 import ZoomBySwitch from '../components/texts/ZoomBySwitch/ZoomBySwitch';
 import ZoomBySwitch2 from '../components/texts/ZoomBySwitch/ZoomBySwitch2';
 
+//Profile
+import AvatarCards from '../components/profile/avatar-cards/AvatarCards';
+
 
 //------------------- Homepage Display -------------------//
 
@@ -165,6 +168,14 @@ export const componentsData = [
         "link": "sub-card-popup",
         "type": "card",
         "component": SubCardPopUp
+    },
+    {
+        "name": "Avatar Cards",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "avatar-cards",
+        "type": "profile",
+        "component": AvatarCards
     }
 
 ]
