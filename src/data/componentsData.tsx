@@ -23,6 +23,9 @@ import ZoomBySwitch2 from '../components/texts/ZoomBySwitch/ZoomBySwitch2';
 //Profile
 import AvatarCards from '../components/profile/avatar-cards/AvatarCards';
 
+//Social Media
+import ButtonsWithToolTipHover from '../components/social-media/buttons-with-tooltip-on-hover/ButtonsWithToolTipHover';
+
 
 //------------------- Homepage Display -------------------//
 
@@ -176,6 +179,14 @@ export const componentsData = [
         "link": "avatar-cards",
         "type": "profile",
         "component": AvatarCards
+    },
+    {
+        "name": "Social Media Buttons With ToolTip Hover",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "buttons-with-tooltip-on-hover",
+        "type": "social-media",
+        "component": ButtonsWithToolTipHover
     }
 
 ]
