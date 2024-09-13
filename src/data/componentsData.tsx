@@ -8,6 +8,7 @@ import CardSlideUp from '../components/cards/card-slide-up/CardSlideUp';
 import ExtensionCardHover from '../components/cards/extension-card-hover/ExtensionCardHover';
 import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-card-hover-effects/GlassmorphismCardHoverEffects';
 import SubCardPopUp from '../components/cards/subCard-popup/SubCardPopUp';
+import LoadingCard from '../components/cards/loading-card/LoadingCard';
 
 //Images Animation
 import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
@@ -22,6 +23,7 @@ import ZoomBySwitch2 from '../components/texts/ZoomBySwitch/ZoomBySwitch2';
 
 //Profile
 import AvatarCards from '../components/profile/avatar-cards/AvatarCards';
+import AvatarCardsTooltip from '../components/profile/avatar-cards-tooltip/AvatarCardsTooltip';
 
 //Social Media
 import ButtonsWithToolTipHover from '../components/social-media/buttons-with-tooltip-on-hover/ButtonsWithToolTipHover';
@@ -187,6 +189,22 @@ export const componentsData = [
         "link": "buttons-with-tooltip-on-hover",
         "type": "social-media",
         "component": ButtonsWithToolTipHover
+    },
+    {
+        "name": "Avatar Cards Tooltip",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "avatar-cards-tooltip",
+        "type": "profile",
+        "component": AvatarCardsTooltip
+    },
+    {
+        "name": "Loading Card",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "loading-card",
+        "type": "card",
+        "component": LoadingCard
     }
 
 ]

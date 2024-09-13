@@ -8,29 +8,22 @@ import './ButtonsWithToolTipHover.css';
 
 
 const ButtonsWithToolTipHoverPage = () => {
+    const socialMediaList = [
+        { name: 'facebook', icon: faFacebookF, tooltip: 'Facebook' },
+        { name: 'x-twitter', icon: faXTwitter, tooltip: 'X' },
+        { name: 'instagram', icon: faInstagram, tooltip: 'Instagram' },
+        { name: 'github', icon: faGithub, tooltip: 'GitHub' },
+        { name: 'youtube', icon: faYoutube, tooltip: 'YouTube' },
+    ];
     return (
         <div className='social-media-tooltip-container'>
             <div className="social-media-tooltip-wrapper">
-                <div className="icon facebook">
-                    <div className="tooltip">Facebook</div>
-                    <span> <FontAwesomeIcon className='social-icon' icon={faFacebookF} /> </span>
-                </div>
-                <div className="icon x-twitter">
-                    <div className="tooltip" style={{padding: '10px 50px'}}>X</div>
-                    <span> <FontAwesomeIcon className='social-icon' icon={faXTwitter} /> </span>
-                </div>
-                <div className="icon instagram">
-                    <div className="tooltip">Instagram</div>
-                    <span> <FontAwesomeIcon className='social-icon' icon={faInstagram} /> </span>
-                </div>
-                <div className="icon github">
-                    <div className="tooltip">GitHub</div>
-                    <span> <FontAwesomeIcon className='social-icon' icon={faGithub} /> </span>
-                </div>
-                <div className="icon youtube">
-                    <div className="tooltip">YouTube</div>
-                    <span> <FontAwesomeIcon className='social-icon' icon={faYoutube} /> </span>
-                </div>
+                {socialMediaList.map((socialMedia) => (
+                    <div key={socialMedia.name} className={`icon ${socialMedia.name}`}>
+                        <div className="tooltip">{socialMedia.tooltip}</div>
+                        <span> <FontAwesomeIcon className='social-icon' icon={socialMedia.icon} /> </span>
+                    </div>
+                ))}
             </div>
         </div>
     );
