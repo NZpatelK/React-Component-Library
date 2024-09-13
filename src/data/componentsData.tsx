@@ -8,6 +8,7 @@ import CardSlideUp from '../components/cards/card-slide-up/CardSlideUp';
 import ExtensionCardHover from '../components/cards/extension-card-hover/ExtensionCardHover';
 import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-card-hover-effects/GlassmorphismCardHoverEffects';
 import SubCardPopUp from '../components/cards/subCard-popup/SubCardPopUp';
+import LoadingCard from '../components/cards/loading-card/LoadingCard';
 
 //Images Animation
 import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
@@ -197,5 +198,13 @@ export const componentsData = [
         "type": "profile",
         "component": AvatarCardsTooltip
     },
+    {
+        "name": "Loading Card",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "loading-card",
+        "type": "card",
+        "component": LoadingCard
+    }
 
 ]

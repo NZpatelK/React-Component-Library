@@ -1,0 +1,120 @@
+.loading-card-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-card {
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.loading-card .loading-header {
+    display: flex;
+    align-items: center;
+}
+
+.loading-card .loading-header .loading-img {
+    height: 70px;
+    width: 70px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-header .details {
+    margin-left: 20px;
+}
+
+.loading-header span {
+    background-color: #d9d9d9;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-header .details .name {
+    width: 100px;
+    height: 15px;
+}
+
+.loading-header .details .about {
+    width: 150px;
+    height: 13px;
+    margin-top: 10px;
+}
+
+.loading-card .loading-content {
+    margin: 25px 0;
+}
+
+.loading-content .line {
+    background-color: #d9d9d9;
+    height: 13px;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-content .line-1 {
+    width: calc(100% - 15%);
+
+}
+
+.loading-content .line-3 {
+    width: calc(100% - 40%);
+}
+
+.loading-card .loading-btns {
+    display: flex;
+}
+
+.loading-btns .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-btns .btn-1 {
+    margin-right: 8px;
+}
+
+.loading-btns .btn-2 {
+    margin-left: 8px;
+}
+
+.loading-card .loading-img::before,
+.loading-card .details span::before,
+.loading-content .line::before,
+.loading-btns .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0, 0, 0, 0.2) 20%, #d9d9d9 40%, #d9d9d9 100%);
+    background-size: 450px 400px;
+    background-repeat: no-repeat;
+    animation: shimmer 1s linear infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -450px 0;
+    }
+
+    100% {
+        background-position: 450px 0;
+    }
+}
