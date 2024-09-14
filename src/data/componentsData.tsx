@@ -9,6 +9,7 @@ import ExtensionCardHover from '../components/cards/extension-card-hover/Extensi
 import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-card-hover-effects/GlassmorphismCardHoverEffects';
 import SubCardPopUp from '../components/cards/subCard-popup/SubCardPopUp';
 import LoadingCard from '../components/cards/loading-card/LoadingCard';
+import LoadingBorderCard from '../components/cards/loading-border-card/LoadingBorderCard';
 
 //Images Animation
 import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
@@ -205,6 +206,14 @@ export const componentsData = [
         "link": "loading-card",
         "type": "card",
         "component": LoadingCard
-    }
+    },
+    {
+        "name": "Loading Border Card",
+        "gif": cardTiltEffectGif,
+        "img": cardtilteffectImg,
+        "link": "loading-border-card",
+        "type": "card",
+        "component": LoadingBorderCard
+    },
 
 ]
