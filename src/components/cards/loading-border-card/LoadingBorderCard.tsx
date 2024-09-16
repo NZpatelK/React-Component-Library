@@ -4,9 +4,13 @@ export default function LoadingBorderCard() {
 
     return (
         <div className="loading-border-card-page">
-            <div className="loading-border-box"></div>
+            {Array.from({ length: 6 }).map((_, i) => (
+                <div className="loading-border-box" key={i}>
+                    <div className='loading-border-loader'>
+                        <span className="loading-border-text">Loading...</span>
+                    </div>
+                </div>
+            ))}
         </div>
     );
-
-
 }
