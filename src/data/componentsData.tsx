@@ -46,20 +46,26 @@ import strokeSvgAnimationGif from '../assets/mainImages/strokeGif.gif';
 import textSvgAnimationGif from '../assets/mainImages/textSvgGif.gif';
 import zoomBySwitchButton from '../assets/mainImages/textSlideByButtonGif.gif';
 import zoomBySwitchScroll from '../assets/mainImages/textSlideByScrollGif.gif';
+import subCardPopup from '../assets/mainImages/subCardPopup.gif';
+import avatarCards from '../assets/mainImages/avatarCard.gif';
+import socialMediaTooltip from '../assets/mainImages/socialMediaTooltip.gif'
 
 //Images 
-import cardtilteffectImg from '../assets/mainImages/3D-card-tilt.jpeg'
-import flipCardHoverEffectsImg from '../assets/mainImages/3dFlipCardgif.jpeg'
-import cardFlippingAnimationImg from '../assets/mainImages/flippingCard.jpeg'
-import cardSlideUpImg from '../assets/mainImages/slideUpCard.jpeg'
-import extensionCardHoverImg from '../assets/mainImages/extendCard.jpeg'
-import CalligraphyStrokeImg from '../assets/mainImages/CalligraphyStrokeGif.jpeg'
-import imageSlideImg from '../assets/mainImages/imageZoom.jpeg'
-import letterRotatingImg from '../assets/mainImages/letterRotating.jpeg'
-import strokeSvgAnimationImg from '../assets/mainImages/strokeGif.jpeg'
-import textSvgAnimationImg from '../assets/mainImages/textSvgGif.jpeg'
-import zoomBySwitchButtonImg from '../assets/mainImages/textSlideByButtonGif.jpeg'
-import zoomBySwitchScrollImg from '../assets/mainImages/textSlideByScrollGif.jpeg'
+import cardtilteffectImg from '../assets/mainImages/3D-card-tilt.jpg'
+import flipCardHoverEffectsImg from '../assets/mainImages/3dFlipCardgif.jpg'
+import cardFlippingAnimationImg from '../assets/mainImages/flippingCard.jpg'
+import cardSlideUpImg from '../assets/mainImages/slideUpCard.jpg'
+import extensionCardHoverImg from '../assets/mainImages/extendCard.jpg'
+import CalligraphyStrokeImg from '../assets/mainImages/CalligraphyStrokeGif.jpg'
+import imageSlideImg from '../assets/mainImages/imageZoom.jpg'
+import letterRotatingImg from '../assets/mainImages/letterRotating.jpg'
+import strokeSvgAnimationImg from '../assets/mainImages/strokeGif.jpg'
+import textSvgAnimationImg from '../assets/mainImages/textSvgGif.jpg'
+import zoomBySwitchButtonImg from '../assets/mainImages/textSlideByButtonGif.jpg'
+import zoomBySwitchScrollImg from '../assets/mainImages/textSlideByScrollGif.jpg'
+import subCardPopupImg from '../assets/mainImages/subCardPopup.jpg'
+import avatarCardsImg from '../assets/mainImages/avatarCard.jpg'
+import socialMediaTooltipImg from '../assets/mainImages/socialMediaTooltip.jpg'
 
 
 export const componentsData = [
@@ -169,24 +175,24 @@ export const componentsData = [
     },
     {
         "name": "Sub Card Pop Up",
-        "gif": cardTiltEffectGif,
-        "img": cardtilteffectImg,
+        "gif": subCardPopup,
+        "img": subCardPopupImg,
         "link": "sub-card-popup",
         "type": "card",
         "component": SubCardPopUp
     },
     {
         "name": "Avatar Cards",
-        "gif": cardTiltEffectGif,
-        "img": cardtilteffectImg,
+        "gif": avatarCards,
+        "img": avatarCardsImg,
         "link": "avatar-cards",
         "type": "profile",
         "component": AvatarCards
     },
     {
         "name": "Social Media Buttons With ToolTip Hover",
-        "gif": cardTiltEffectGif,
-        "img": cardtilteffectImg,
+        "gif": socialMediaTooltip,
+        "img": socialMediaTooltipImg,
         "link": "buttons-with-tooltip-on-hover",
         "type": "social-media",
         "component": ButtonsWithToolTipHover
