@@ -49,6 +49,9 @@ import zoomBySwitchScroll from '../assets/mainImages/textSlideByScrollGif.gif';
 import subCardPopup from '../assets/mainImages/subCardPopup.gif';
 import avatarCards from '../assets/mainImages/avatarCard.gif';
 import socialMediaTooltip from '../assets/mainImages/socialMediaTooltip.gif'
+import avatarCardsTooltip from '../assets/mainImages/avatarCardTooltip.gif'
+import loadingCard from '../assets/mainImages/loadingCard.gif'
+import loadingBorderCard from '../assets/mainImages/borderCardLoading.gif'
 
 //Images 
 import cardtilteffectImg from '../assets/mainImages/3D-card-tilt.jpg'
@@ -66,6 +69,9 @@ import zoomBySwitchScrollImg from '../assets/mainImages/textSlideByScrollGif.jpg
 import subCardPopupImg from '../assets/mainImages/subCardPopup.jpg'
 import avatarCardsImg from '../assets/mainImages/avatarCard.jpg'
 import socialMediaTooltipImg from '../assets/mainImages/socialMediaTooltip.jpg'
+import avatarCardsTooltipImg from '../assets/mainImages/avatarCardTooltip.jpg'
+import loadingCardImg from '../assets/mainImages/loadingCard.jpg'
+import loadingBorderCardImg from '../assets/mainImages/borderCardLoading.jpg'
 
 
 export const componentsData = [
@@ -199,24 +205,24 @@ export const componentsData = [
     },
     {
         "name": "Avatar Cards Tooltip",
-        "gif": cardTiltEffectGif,
-        "img": cardtilteffectImg,
+        "gif": avatarCardsTooltip,
+        "img": avatarCardsTooltipImg,
         "link": "avatar-cards-tooltip",
         "type": "profile",
         "component": AvatarCardsTooltip
     },
     {
         "name": "Loading Card",
-        "gif": cardTiltEffectGif,
-        "img": cardtilteffectImg,
+        "gif": loadingCard,
+        "img": loadingCardImg,
         "link": "loading-card",
         "type": "card",
         "component": LoadingCard
     },
     {
         "name": "Loading Border Card",
-        "gif": cardTiltEffectGif,
-        "img": cardtilteffectImg,
+        "gif": loadingBorderCard,
+        "img": loadingBorderCardImg,
         "link": "loading-border-card",
         "type": "card",
         "component": LoadingBorderCard
