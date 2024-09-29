@@ -10,6 +10,7 @@ import GlassmorphismCardHoverEffects from '../components/cards/glassmorphism-car
 import SubCardPopUp from '../components/cards/subCard-popup/SubCardPopUp';
 import LoadingCard from '../components/cards/loading-card/LoadingCard';
 import LoadingBorderCard from '../components/cards/loading-border-card/LoadingBorderCard';
+import Toast from '../components/notifications/toast/Toast';
 
 //Images Animation
 import ImagesZoomIn from '../components/images-animation/images-zoom-in/ImagesZoomIn';
@@ -227,5 +228,13 @@ export const componentsData = [
         "type": "card",
         "component": LoadingBorderCard
     },
+    {
+        "name": "Toast Notification",
+        // "gif": toastGif,
+        // "img": toastImg,
+        "link": "toast-notification",
+        "type": "notification",
+        "component": Toast
+    }
 
 ]
