@@ -1,4 +1,3 @@
-import React from 'react';
 import './SubCardPopUp.css';
 import img1 from '../../../assets/nature/1.jpeg';
 import img2 from '../../../assets/nature/2.jpeg';

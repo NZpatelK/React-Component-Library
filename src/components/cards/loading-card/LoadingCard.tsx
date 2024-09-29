@@ -1,4 +1,3 @@
-import React from 'react';
 import './loadingCard.css';
 
 export default function LoadingCard() {
