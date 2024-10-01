@@ -33,26 +33,6 @@ import ButtonsWithToolTipHover from '../components/social-media/buttons-with-too
 
 //------------------- Homepage Display -------------------//
 
-//Gifs
-import cardTiltEffectGif from '../assets/mainImages/3D-card-tilt.gif';
-import flipCardHoverEffectsGif from '../assets/mainImages/3dFlipCardgif.gif';
-import cardFlippingAnimationGif from '../assets/mainImages/flippingCard.gif';
-import cardSlideUpGif from '../assets/mainImages/slideUpCard.gif';
-import glassmorphismCard from '../assets/mainImages/GlassmorphismCardHoverEffectsGif.gif'
-import extensionCardHover from '../assets/mainImages/extendCard.gif'
-import CalligraphyStroke from '../assets/mainImages/CalligraphyStrokeGif.gif';
-import imageSlide from '../assets/mainImages/imageZoom.gif';
-import letterRotatingGif from '../assets/mainImages/letterRotating.gif';
-import strokeSvgAnimationGif from '../assets/mainImages/strokeGif.gif';
-import textSvgAnimationGif from '../assets/mainImages/textSvgGif.gif';
-import zoomBySwitchButton from '../assets/mainImages/textSlideByButtonGif.gif';
-import zoomBySwitchScroll from '../assets/mainImages/textSlideByScrollGif.gif';
-import subCardPopup from '../assets/mainImages/subCardPopup.gif';
-import avatarCards from '../assets/mainImages/avatarCard.gif';
-import socialMediaTooltip from '../assets/mainImages/socialMediaTooltip.gif'
-import avatarCardsTooltip from '../assets/mainImages/avatarCardTooltip.gif'
-import loadingCard from '../assets/mainImages/loadingCard.gif'
-import loadingBorderCard from '../assets/mainImages/borderCardLoading.gif'
 
 //Images 
 import cardtilteffectImg from '../assets/mainImages/3D-card-tilt.jpg'
@@ -61,6 +41,7 @@ import cardFlippingAnimationImg from '../assets/mainImages/flippingCard.jpg'
 import cardSlideUpImg from '../assets/mainImages/slideUpCard.jpg'
 import extensionCardHoverImg from '../assets/mainImages/extendCard.jpg'
 import CalligraphyStrokeImg from '../assets/mainImages/CalligraphyStrokeGif.jpg'
+import glassmorphismCardImg from '../assets/mainImages/GlassmorphismCardHoverEffectsGif.jpg'
 import imageSlideImg from '../assets/mainImages/imageZoom.jpg'
 import letterRotatingImg from '../assets/mainImages/letterRotating.jpg'
 import strokeSvgAnimationImg from '../assets/mainImages/strokeGif.jpg'
@@ -78,7 +59,6 @@ import loadingBorderCardImg from '../assets/mainImages/borderCardLoading.jpg'
 export const componentsData = [
     {
         "name": "3D Card Tilt Effect",
-        "gif": cardTiltEffectGif,
         "img": cardtilteffectImg,
         "link": "3d-card-tilt-effect",
         "type": "card",
@@ -86,7 +66,6 @@ export const componentsData = [
     },
     {
         "name": "3D Flip Card Hover Effects",
-        "gif": flipCardHoverEffectsGif,
         "img": flipCardHoverEffectsImg,
         "link": "3d-flip-card-hover-effects",
         "type": "card",
@@ -94,7 +73,6 @@ export const componentsData = [
     },
     {
         "name": "Card Flipping Animation",
-        "gif": cardFlippingAnimationGif,
         "img": cardFlippingAnimationImg,
         "link": "card-flipping-animation",
         "type": "card",
@@ -102,7 +80,6 @@ export const componentsData = [
     },
     {
         "name": "Card Slide Up",
-        "gif": cardSlideUpGif,
         "img": cardSlideUpImg,
         "link": "card-slide-up",
         "type": "card",
@@ -110,7 +87,6 @@ export const componentsData = [
     },
     {
         "name": "Extension Card Hover",
-        "gif": extensionCardHover,
         "img": extensionCardHoverImg,
         "link": "extension-card-hover",
         "type": "card",
@@ -118,15 +94,13 @@ export const componentsData = [
     },
     {
         "name": "Glassmorphism Card Hover Effects",
-        "gif": glassmorphismCard,
-        "img": glassmorphismCard,
+        "img": glassmorphismCardImg,
         "link": "glassmorphism-card-hover-effects",
         "type": "card",
         "component": GlassmorphismCardHoverEffects
     },
     {
         "name": "Images Zoom In",
-        "gif": imageSlide,
         "img": imageSlideImg,
         "link": "images-zoom-in",
         "type": "image",
@@ -134,7 +108,6 @@ export const componentsData = [
     },
     {
         "name": "Calligraphy Stroke Animation",
-        "gif": CalligraphyStroke,
         "img": CalligraphyStrokeImg,
         "link": "calligraphy-stroke-animation",
         "type": "text",
@@ -142,7 +115,6 @@ export const componentsData = [
     },
     {
         "name": "Letter Rotating",
-        "gif": letterRotatingGif,
         "img": letterRotatingImg,
         "link": "letter-rotating",
         "type": "text",
@@ -150,7 +122,6 @@ export const componentsData = [
     },
     {
         "name": "Stroke Svg Animation",
-        "gif": strokeSvgAnimationGif,
         "img": strokeSvgAnimationImg,
         "link": "stroke-svg-animation",
         "type": "text",
@@ -158,7 +129,6 @@ export const componentsData = [
     },
     {
         "name": "Text Svg Animation",
-        "gif": textSvgAnimationGif,
         "img": textSvgAnimationImg,
         "link": "text-svg-animation",
         "type": "text",
@@ -166,7 +136,6 @@ export const componentsData = [
     },
     {
         "name": "Zoom By Switch",
-        "gif": zoomBySwitchButton,
         "img": zoomBySwitchButtonImg,
         "link": "zoom-by-switch",
         "type": "text",
@@ -174,7 +143,6 @@ export const componentsData = [
     },
     {
         "name": "Zoom By Scroll",
-        "gif": zoomBySwitchScroll,
         "img": zoomBySwitchScrollImg,
         "link": "zoom-by-switch-2",
         "type": "text",
@@ -182,7 +150,6 @@ export const componentsData = [
     },
     {
         "name": "Sub Card Pop Up",
-        "gif": subCardPopup,
         "img": subCardPopupImg,
         "link": "sub-card-popup",
         "type": "card",
@@ -190,7 +157,6 @@ export const componentsData = [
     },
     {
         "name": "Avatar Cards",
-        "gif": avatarCards,
         "img": avatarCardsImg,
         "link": "avatar-cards",
         "type": "profile",
@@ -198,7 +164,6 @@ export const componentsData = [
     },
     {
         "name": "Social Media Buttons With ToolTip Hover",
-        "gif": socialMediaTooltip,
         "img": socialMediaTooltipImg,
         "link": "buttons-with-tooltip-on-hover",
         "type": "social-media",
@@ -206,7 +171,6 @@ export const componentsData = [
     },
     {
         "name": "Avatar Cards Tooltip",
-        "gif": avatarCardsTooltip,
         "img": avatarCardsTooltipImg,
         "link": "avatar-cards-tooltip",
         "type": "profile",
@@ -214,7 +178,6 @@ export const componentsData = [
     },
     {
         "name": "Loading Card",
-        "gif": loadingCard,
         "img": loadingCardImg,
         "link": "loading-card",
         "type": "card",
@@ -222,7 +185,6 @@ export const componentsData = [
     },
     {
         "name": "Loading Border Card",
-        "gif": loadingBorderCard,
         "img": loadingBorderCardImg,
         "link": "loading-border-card",
         "type": "card",
@@ -230,7 +192,6 @@ export const componentsData = [
     },
     {
         "name": "Toast Notification",
-        // "gif": toastGif,
         // "img": toastImg,
         "link": "toast-notification",
         "type": "notification",
