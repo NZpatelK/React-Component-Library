@@ -33,7 +33,6 @@ import ButtonsWithToolTipHover from '../components/social-media/buttons-with-too
 
 //------------------- Homepage Display -------------------//
 
-
 //Images 
 import cardtilteffectImg from '../assets/mainImages/3D-card-tilt.jpg'
 import flipCardHoverEffectsImg from '../assets/mainImages/3dFlipCardgif.jpg'
